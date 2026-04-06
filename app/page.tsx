@@ -35,11 +35,11 @@ export default function Home() {
               Формируем институциональную основу для развития предпринимательства в Казахстане
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="#membership" className="text-[13px] font-semibold bg-[#c9a84c] hover:bg-[#b89540] text-[#0f2b5b] px-5 py-2.5 rounded-md transition-colors">
-                Вступить в палату →
+              <a href="#about" className="text-[13px] font-semibold bg-[#c9a84c] hover:bg-[#b89540] text-[#0f2b5b] px-5 py-2.5 rounded-md transition-colors">
+                О палате →
               </a>
-              <a href="#about" className="text-[13px] font-medium bg-white/8 hover:bg-white/12 border border-white/15 text-white/80 px-5 py-2.5 rounded-md transition-colors">
-                Подробнее
+              <a href="#contacts" className="text-[13px] font-medium bg-white/8 hover:bg-white/12 border border-white/15 text-white/80 px-5 py-2.5 rounded-md transition-colors">
+                Контакты
               </a>
             </div>
           </div>
@@ -108,16 +108,16 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { icon: "⚖️", title: "Защита прав", desc: "Представление и защита прав членов в органах власти, судах и общественных организациях" },
-              { icon: "📋", title: "Законодательные инициативы", desc: "Участие в разработке законов и нормативных актов, предложения по изменению законодательства" },
-              { icon: "🤝", title: "Арбитраж и медиация", desc: "Судебное и досудебное разрешение споров, включая арбитражное производство" },
-              { icon: "✓", title: "Стандарты и контроль", desc: "Утверждение правил и стандартов, обязательных для членов палаты" },
-              { icon: "📖", title: "Обучение и аттестация", desc: "Профессиональная учёба, аттестация и оценка соответствия деятельности" },
-              { icon: "🏛", title: "Взаимодействие с государством", desc: "Сотрудничество с НПП «Атамекен» и государственными органами" },
+              { num: "01", title: "Защита прав", desc: "Представление и защита прав членов в органах власти, судах и общественных организациях" },
+              { num: "02", title: "Законодательные инициативы", desc: "Участие в разработке законов и нормативных актов, предложения по изменению законодательства" },
+              { num: "03", title: "Арбитраж и медиация", desc: "Судебное и досудебное разрешение споров, включая арбитражное производство" },
+              { num: "04", title: "Стандарты и контроль", desc: "Утверждение правил и стандартов, обязательных для членов палаты" },
+              { num: "05", title: "Обучение и аттестация", desc: "Профессиональная учёба, аттестация и оценка соответствия деятельности" },
+              { num: "06", title: "Взаимодействие с государством", desc: "Сотрудничество с НПП «Атамекен» и государственными органами" },
             ].map((d, i) => (
               <div key={i} className="bg-white rounded-lg p-5 border border-gray-100 hover:border-gray-200 transition-colors">
-                <span className="text-base mb-3 block">{d.icon}</span>
-                <h3 className="text-[14px] font-bold text-[#0f2b5b] mb-1.5">{d.title}</h3>
+                <span className="text-[11px] font-bold text-[#c9a84c] tracking-wider">{d.num}</span>
+                <h3 className="text-[14px] font-bold text-[#0f2b5b] mt-2 mb-1.5">{d.title}</h3>
                 <p className="text-[13px] text-gray-400 leading-[1.6]">{d.desc}</p>
               </div>
             ))}
@@ -153,9 +153,9 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-[#0f2b5b] rounded-xl p-6 sm:p-8">
-              <h3 className="text-[18px] font-bold text-white mb-2">Готовы вступить?</h3>
+              <h3 className="text-[18px] font-bold text-white mb-2">Кто может вступить</h3>
               <p className="text-[13px] text-white/40 leading-[1.6] mb-5">
-                Подайте заявку на вступление и получите доступ ко всем преимуществам членства в палате.
+                Членами палаты могут стать предприниматели и организации, заинтересованные в развитии бизнес-среды Казахстана.
               </p>
               <div className="space-y-2.5 mb-6">
                 {["Юридические лица", "Индивидуальные предприниматели", "Объединения предпринимателей"].map((item, i) => (
@@ -165,9 +165,9 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <a href="#contacts" className="block text-center text-[13px] font-semibold bg-[#c9a84c] hover:bg-[#b89540] text-[#0f2b5b] py-2.5 rounded-md transition-colors">
-                Подать заявку
-              </a>
+              <p className="text-[12px] text-white/30 leading-[1.6]">
+                Для вступления свяжитесь с нами через контактные данные ниже.
+              </p>
             </div>
           </div>
         </div>
