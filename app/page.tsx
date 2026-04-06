@@ -1,52 +1,44 @@
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white text-[#1a1a2e]">
       {/* ===== HEADER ===== */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#0f2b5b] rounded-lg flex items-center justify-center">
-              <span className="text-[#c9a84c] font-bold text-lg">С</span>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100/80">
+        <div className="max-w-[1120px] mx-auto px-5 h-14 flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <div className="w-7 h-7 bg-[#0f2b5b] rounded flex items-center justify-center">
+              <span className="text-[#c9a84c] font-bold text-[11px]">С</span>
             </div>
-            <div>
-              <p className="text-sm font-bold text-[#0f2b5b] leading-tight tracking-tight">ПРБ «Самғау»</p>
-              <p className="text-[10px] text-gray-400 leading-tight">Палата Развития Бизнеса</p>
-            </div>
+            <span className="text-[13px] font-semibold text-[#0f2b5b] tracking-tight">ПРБ «Самғау»</span>
           </div>
-          <nav className="hidden md:flex items-center gap-6">
-            <a href="#about" className="text-sm text-gray-600 hover:text-[#0f2b5b] transition-colors">О палате</a>
-            <a href="#directions" className="text-sm text-gray-600 hover:text-[#0f2b5b] transition-colors">Направления</a>
-            <a href="#membership" className="text-sm text-gray-600 hover:text-[#0f2b5b] transition-colors">Членство</a>
-            <a href="#contacts" className="text-sm text-white bg-[#0f2b5b] hover:bg-[#1a3d7a] px-4 py-2 rounded-lg transition-colors">Связаться</a>
+          <nav className="hidden md:flex items-center gap-5">
+            <a href="#about" className="text-[13px] text-gray-500 hover:text-[#0f2b5b] transition-colors">О палате</a>
+            <a href="#directions" className="text-[13px] text-gray-500 hover:text-[#0f2b5b] transition-colors">Направления</a>
+            <a href="#membership" className="text-[13px] text-gray-500 hover:text-[#0f2b5b] transition-colors">Членство</a>
+            <a href="#contacts" className="text-[13px] text-white bg-[#0f2b5b] hover:bg-[#183a6e] px-3.5 py-1.5 rounded-md transition-colors">Связаться</a>
           </nav>
         </div>
       </header>
 
       {/* ===== HERO ===== */}
-      <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 bg-gradient-to-br from-[#0f2b5b] via-[#162d54] to-[#0a1f3d] text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-[#c9a84c] rounded-full blur-[120px]" />
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-white rounded-full blur-[150px]" />
-        </div>
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
-              <div className="w-2 h-2 bg-[#c9a84c] rounded-full" />
-              <span className="text-xs text-white/80">Республика Казахстан</span>
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 tracking-tight">
-              Палата Развития<br />
-              Бизнеса <span className="text-[#c9a84c]">«Самғау»</span>
+      <section className="pt-14">
+        <div className="bg-[#0f2b5b] relative overflow-hidden">
+          <div className="absolute inset-0">
+            <div className="absolute -top-20 -right-20 w-[400px] h-[400px] bg-[#c9a84c]/8 rounded-full blur-[100px]" />
+            <div className="absolute -bottom-40 -left-20 w-[300px] h-[300px] bg-white/5 rounded-full blur-[80px]" />
+          </div>
+          <div className="relative max-w-[1120px] mx-auto px-5 py-16 sm:py-24">
+            <p className="text-[11px] font-medium text-[#c9a84c] uppercase tracking-[0.15em] mb-4">Республика Казахстан</p>
+            <h1 className="text-[32px] sm:text-[44px] lg:text-[52px] font-extrabold text-white leading-[1.08] tracking-tight mb-5 max-w-[620px]">
+              Палата Развития Бизнеса <span className="text-[#c9a84c]">«Самғау»</span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/70 leading-relaxed mb-8 max-w-2xl">
-              Формируем устойчивую институциональную основу для долгосрочного развития предпринимательства в Казахстане
+            <p className="text-[15px] sm:text-[17px] text-white/50 leading-relaxed max-w-[520px] mb-8">
+              Формируем институциональную основу для развития предпринимательства в Казахстане
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="#membership" className="inline-flex items-center gap-2 bg-[#c9a84c] hover:bg-[#b8963f] text-[#0f2b5b] font-semibold px-6 py-3 rounded-lg transition-colors text-sm">
-                Вступить в палату
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            <div className="flex flex-wrap gap-3">
+              <a href="#membership" className="text-[13px] font-semibold bg-[#c9a84c] hover:bg-[#b89540] text-[#0f2b5b] px-5 py-2.5 rounded-md transition-colors">
+                Вступить в палату →
               </a>
-              <a href="#about" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium px-6 py-3 rounded-lg transition-colors text-sm">
+              <a href="#about" className="text-[13px] font-medium bg-white/8 hover:bg-white/12 border border-white/15 text-white/80 px-5 py-2.5 rounded-md transition-colors">
                 Подробнее
               </a>
             </div>
@@ -55,66 +47,48 @@ export default function Home() {
       </section>
 
       {/* ===== STATS ===== */}
-      <section className="relative -mt-12 z-10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { num: "15+", label: "лет опыта" },
-              { num: "500+", label: "членов палаты" },
-              { num: "50+", label: "законодательных инициатив" },
-              { num: "1000+", label: "решённых споров" },
-            ].map((s, i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg shadow-gray-200/50 border border-gray-100 p-6 text-center">
-                <p className="text-2xl sm:text-3xl font-extrabold text-[#0f2b5b]">{s.num}</p>
-                <p className="text-xs sm:text-sm text-gray-500 mt-1">{s.label}</p>
-              </div>
-            ))}
-          </div>
+      <section className="border-b border-gray-100">
+        <div className="max-w-[1120px] mx-auto px-5 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { num: "15+", label: "Лет опыта" },
+            { num: "500+", label: "Членов палаты" },
+            { num: "50+", label: "Законодательных инициатив" },
+            { num: "1000+", label: "Решённых споров" },
+          ].map((s, i) => (
+            <div key={i} className="text-center">
+              <p className="text-[28px] font-extrabold text-[#0f2b5b] tracking-tight">{s.num}</p>
+              <p className="text-[12px] text-gray-400 mt-0.5">{s.label}</p>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* ===== ABOUT ===== */}
-      <section id="about" className="py-20 sm:py-28">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-widest mb-3">О палате</p>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f2b5b] mb-6 leading-tight">
-                Защита и развитие бизнеса в Казахстане
+      <section id="about" className="py-16 sm:py-24">
+        <div className="max-w-[1120px] mx-auto px-5">
+          <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
+            <div className="lg:col-span-3">
+              <p className="text-[11px] font-semibold text-[#c9a84c] uppercase tracking-[0.15em] mb-3">О палате</p>
+              <h2 className="text-[26px] sm:text-[32px] font-extrabold text-[#0f2b5b] leading-tight tracking-tight mb-5">
+                Защита и развитие<br />бизнеса в Казахстане
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-[14px] text-gray-500 leading-[1.7] mb-4">
                 ПРБ «Самғау» — саморегулируемая организация, объединяющая предпринимателей для защиты их прав и законных интересов в органах государственной власти, судебных инстанциях и общественных объединениях.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-[14px] text-gray-500 leading-[1.7]">
                 Мы участвуем в выработке решений органов власти, разработке законодательных и нормативных актов, формируя благоприятные условия для предпринимательства по всей республике.
               </p>
-              <div className="flex gap-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#0f2b5b]/5 rounded-lg flex items-center justify-center">
-                    <svg className="w-4 h-4 text-[#0f2b5b]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  </div>
-                  <span className="text-sm text-gray-700">Официальный статус</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#0f2b5b]/5 rounded-lg flex items-center justify-center">
-                    <svg className="w-4 h-4 text-[#0f2b5b]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
-                  </div>
-                  <span className="text-sm text-gray-700">Правовая защита</span>
-                </div>
-              </div>
             </div>
-            <div className="bg-gradient-to-br from-[#f8f9fc] to-[#eef1f8] rounded-2xl p-8 sm:p-10 border border-gray-100">
-              <h3 className="text-lg font-bold text-[#0f2b5b] mb-4">Наша миссия</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Формирование устойчивой институциональной основы для долгосрочного развития предпринимательства в Республике Казахстан через инвестиционную и информационную деятельность.
+            <div className="lg:col-span-2 bg-[#f7f8fb] rounded-xl p-6 sm:p-8">
+              <p className="text-[11px] font-semibold text-[#c9a84c] uppercase tracking-[0.15em] mb-3">Миссия</p>
+              <p className="text-[14px] text-gray-600 leading-[1.7] mb-5">
+                Формирование устойчивой основы для долгосрочного развития предпринимательства через инвестиционную и информационную деятельность.
               </p>
-              <div className="space-y-3">
+              <div className="space-y-2.5">
                 {["Представительство интересов бизнеса", "Развитие саморегулирования", "Повышение стандартов отрасли"].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-[#c9a84c]/20 rounded flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-[#c9a84c]" fill="none" viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                    </div>
-                    <span className="text-sm text-gray-700">{item}</span>
+                  <div key={i} className="flex items-center gap-2.5">
+                    <div className="w-1 h-1 bg-[#c9a84c] rounded-full shrink-0" />
+                    <span className="text-[13px] text-gray-600">{item}</span>
                   </div>
                 ))}
               </div>
@@ -124,53 +98,27 @@ export default function Home() {
       </section>
 
       {/* ===== DIRECTIONS ===== */}
-      <section id="directions" className="py-20 sm:py-28 bg-[#f8f9fc]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-14">
-            <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-widest mb-3">Направления</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f2b5b] leading-tight">
+      <section id="directions" className="py-16 sm:py-24 bg-[#f7f8fb]">
+        <div className="max-w-[1120px] mx-auto px-5">
+          <div className="mb-10">
+            <p className="text-[11px] font-semibold text-[#c9a84c] uppercase tracking-[0.15em] mb-3">Направления</p>
+            <h2 className="text-[26px] sm:text-[32px] font-extrabold text-[#0f2b5b] leading-tight tracking-tight">
               Ключевые направления деятельности
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              {
-                icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>),
-                title: "Защита прав",
-                desc: "Представление и защита прав и законных интересов членов в органах власти, судебных инстанциях и общественных организациях"
-              },
-              {
-                icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>),
-                title: "Законодательные инициативы",
-                desc: "Участие в разработке законов и нормативных актов, внесение предложений по изменению законодательства РК"
-              },
-              {
-                icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>),
-                title: "Арбитраж и медиация",
-                desc: "Участие в судебном и досудебном разрешении споров, включая арбитражное производство"
-              },
-              {
-                icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>),
-                title: "Стандарты и контроль",
-                desc: "Утверждение правил и стандартов, обязательных для членов палаты, контроль их соблюдения"
-              },
-              {
-                icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>),
-                title: "Обучение и аттестация",
-                desc: "Организация профессиональной учёбы, аттестации и оценки соответствия деятельности работников"
-              },
-              {
-                icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>),
-                title: "Взаимодействие с государством",
-                desc: "Сотрудничество с НПП «Атамекен», государственными органами и органами местного самоуправления"
-              },
+              { icon: "⚖️", title: "Защита прав", desc: "Представление и защита прав членов в органах власти, судах и общественных организациях" },
+              { icon: "📋", title: "Законодательные инициативы", desc: "Участие в разработке законов и нормативных актов, предложения по изменению законодательства" },
+              { icon: "🤝", title: "Арбитраж и медиация", desc: "Судебное и досудебное разрешение споров, включая арбитражное производство" },
+              { icon: "✓", title: "Стандарты и контроль", desc: "Утверждение правил и стандартов, обязательных для членов палаты" },
+              { icon: "📖", title: "Обучение и аттестация", desc: "Профессиональная учёба, аттестация и оценка соответствия деятельности" },
+              { icon: "🏛", title: "Взаимодействие с государством", desc: "Сотрудничество с НПП «Атамекен» и государственными органами" },
             ].map((d, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg hover:shadow-gray-200/50 transition-all group">
-                <div className="w-12 h-12 bg-[#0f2b5b]/5 group-hover:bg-[#c9a84c]/10 rounded-xl flex items-center justify-center text-[#0f2b5b] group-hover:text-[#c9a84c] transition-colors mb-4">
-                  {d.icon}
-                </div>
-                <h3 className="text-base font-bold text-[#0f2b5b] mb-2">{d.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{d.desc}</p>
+              <div key={i} className="bg-white rounded-lg p-5 border border-gray-100 hover:border-gray-200 transition-colors">
+                <span className="text-base mb-3 block">{d.icon}</span>
+                <h3 className="text-[14px] font-bold text-[#0f2b5b] mb-1.5">{d.title}</h3>
+                <p className="text-[13px] text-gray-400 leading-[1.6]">{d.desc}</p>
               </div>
             ))}
           </div>
@@ -178,50 +126,46 @@ export default function Home() {
       </section>
 
       {/* ===== MEMBERSHIP ===== */}
-      <section id="membership" className="py-20 sm:py-28">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section id="membership" className="py-16 sm:py-24">
+        <div className="max-w-[1120px] mx-auto px-5">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             <div>
-              <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-widest mb-3">Членство</p>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f2b5b] mb-6 leading-tight">
-                Преимущества членства в палате
+              <p className="text-[11px] font-semibold text-[#c9a84c] uppercase tracking-[0.15em] mb-3">Членство</p>
+              <h2 className="text-[26px] sm:text-[32px] font-extrabold text-[#0f2b5b] leading-tight tracking-tight mb-6">
+                Преимущества членства
               </h2>
-              <div className="space-y-5">
+              <div className="space-y-4">
                 {[
-                  { title: "Правовая защита", desc: "Представление ваших интересов в государственных органах и судах" },
+                  { title: "Правовая защита", desc: "Представление интересов в государственных органах и судах" },
                   { title: "Влияние на законодательство", desc: "Участие в разработке законов, влияющих на вашу отрасль" },
-                  { title: "Профессиональное развитие", desc: "Доступ к обучению, аттестации и повышению квалификации" },
-                  { title: "Разрешение споров", desc: "Арбитраж и медиация для быстрого решения деловых конфликтов" },
-                  { title: "Информационная поддержка", desc: "Получение актуальной информации от государственных органов" },
+                  { title: "Профессиональное развитие", desc: "Обучение, аттестация и повышение квалификации" },
+                  { title: "Разрешение споров", desc: "Арбитраж и медиация для решения деловых конфликтов" },
+                  { title: "Информационная поддержка", desc: "Актуальная информация от государственных органов" },
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-4">
-                    <div className="w-8 h-8 bg-[#c9a84c]/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                      <span className="text-sm font-bold text-[#c9a84c]">{i + 1}</span>
-                    </div>
+                  <div key={i} className="flex gap-3.5">
+                    <span className="text-[12px] font-bold text-[#c9a84c] mt-0.5 w-5 shrink-0">{String(i + 1).padStart(2, '0')}</span>
                     <div>
-                      <h4 className="text-sm font-bold text-[#0f2b5b] mb-0.5">{item.title}</h4>
-                      <p className="text-sm text-gray-500">{item.desc}</p>
+                      <h4 className="text-[14px] font-semibold text-[#0f2b5b] mb-0.5">{item.title}</h4>
+                      <p className="text-[13px] text-gray-400">{item.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-[#0f2b5b] to-[#1a3d7a] rounded-2xl p-8 sm:p-10 text-white">
-              <h3 className="text-xl font-bold mb-3">Готовы вступить?</h3>
-              <p className="text-white/60 text-sm mb-6 leading-relaxed">
-                Подайте заявку на вступление в Палату Развития Бизнеса «Самғау» и получите доступ ко всем преимуществам членства.
+            <div className="bg-[#0f2b5b] rounded-xl p-6 sm:p-8">
+              <h3 className="text-[18px] font-bold text-white mb-2">Готовы вступить?</h3>
+              <p className="text-[13px] text-white/40 leading-[1.6] mb-5">
+                Подайте заявку на вступление и получите доступ ко всем преимуществам членства в палате.
               </p>
-              <div className="space-y-4 mb-6">
+              <div className="space-y-2.5 mb-6">
                 {["Юридические лица", "Индивидуальные предприниматели", "Объединения предпринимателей"].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-[#c9a84c]/20 rounded flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-[#c9a84c]" fill="none" viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                    </div>
-                    <span className="text-sm text-white/80">{item}</span>
+                  <div key={i} className="flex items-center gap-2.5">
+                    <div className="w-1 h-1 bg-[#c9a84c] rounded-full shrink-0" />
+                    <span className="text-[13px] text-white/60">{item}</span>
                   </div>
                 ))}
               </div>
-              <a href="#contacts" className="inline-flex items-center gap-2 bg-[#c9a84c] hover:bg-[#b8963f] text-[#0f2b5b] font-semibold px-6 py-3 rounded-lg transition-colors text-sm w-full justify-center">
+              <a href="#contacts" className="block text-center text-[13px] font-semibold bg-[#c9a84c] hover:bg-[#b89540] text-[#0f2b5b] py-2.5 rounded-md transition-colors">
                 Подать заявку
               </a>
             </div>
@@ -230,52 +174,39 @@ export default function Home() {
       </section>
 
       {/* ===== CONTACTS ===== */}
-      <section id="contacts" className="py-20 sm:py-28 bg-[#f8f9fc]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-14">
-            <p className="text-xs font-semibold text-[#c9a84c] uppercase tracking-widest mb-3">Контакты</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f2b5b] leading-tight">
+      <section id="contacts" className="py-16 sm:py-24 bg-[#f7f8fb]">
+        <div className="max-w-[1120px] mx-auto px-5">
+          <div className="mb-10">
+            <p className="text-[11px] font-semibold text-[#c9a84c] uppercase tracking-[0.15em] mb-3">Контакты</p>
+            <h2 className="text-[26px] sm:text-[32px] font-extrabold text-[#0f2b5b] leading-tight tracking-tight">
               Свяжитесь с нами
             </h2>
           </div>
-          <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="bg-white rounded-xl p-6 text-center border border-gray-100">
-              <div className="w-12 h-12 bg-[#0f2b5b]/5 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <svg className="w-5 h-5 text-[#0f2b5b]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          <div className="grid sm:grid-cols-3 gap-4 max-w-[700px]">
+            {[
+              { label: "Адрес", value: "Казахстан" },
+              { label: "Email", value: "info@samgau.kz" },
+              { label: "Телефон", value: "Уточняется" },
+            ].map((c, i) => (
+              <div key={i} className="bg-white rounded-lg p-5 border border-gray-100">
+                <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-1">{c.label}</p>
+                <p className="text-[14px] font-medium text-[#0f2b5b]">{c.value}</p>
               </div>
-              <p className="text-xs font-semibold text-[#0f2b5b] mb-1">Адрес</p>
-              <p className="text-sm text-gray-500">Казахстан</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 text-center border border-gray-100">
-              <div className="w-12 h-12 bg-[#0f2b5b]/5 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <svg className="w-5 h-5 text-[#0f2b5b]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-              </div>
-              <p className="text-xs font-semibold text-[#0f2b5b] mb-1">Email</p>
-              <p className="text-sm text-gray-500">info@samgau.kz</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 text-center border border-gray-100">
-              <div className="w-12 h-12 bg-[#0f2b5b]/5 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <svg className="w-5 h-5 text-[#0f2b5b]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              </div>
-              <p className="text-xs font-semibold text-[#0f2b5b] mb-1">Телефон</p>
-              <p className="text-sm text-gray-500">Уточняется</p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="bg-[#0f2b5b] text-white py-10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
-                <span className="text-[#c9a84c] font-bold text-sm">С</span>
-              </div>
-              <span className="text-sm font-semibold">ПРБ «Самғау»</span>
+      <footer className="bg-[#0f2b5b] py-6">
+        <div className="max-w-[1120px] mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <div className="w-5 h-5 bg-white/10 rounded flex items-center justify-center">
+              <span className="text-[#c9a84c] font-bold text-[9px]">С</span>
             </div>
-            <p className="text-xs text-white/40">© 2025 Палата Развития Бизнеса «Самғау». Все права защищены.</p>
+            <span className="text-[12px] font-medium text-white/70">ПРБ «Самғау»</span>
           </div>
+          <p className="text-[11px] text-white/25">© 2025 Палата Развития Бизнеса «Самғау». Все права защищены.</p>
         </div>
       </footer>
     </div>
